@@ -5,9 +5,9 @@ namespace Challenge.Repositories
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private readonly CustomerDbContext _dbContext;
+        private readonly CustomerAuthDbContext _dbContext;
 
-        public CustomerRepository(CustomerDbContext dbContext)
+        public CustomerRepository(CustomerAuthDbContext dbContext)
         {
             _dbContext = dbContext;
         }
